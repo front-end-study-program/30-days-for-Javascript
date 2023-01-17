@@ -143,3 +143,74 @@ for (let index = 0; index < countries.length; index++) {
   countries[index] = countries[index].toLocaleUpperCase()
 }
 
+
+for (let index = 0; index < countries.length; index++) {
+  if (/land/i.test(countries[index])) {
+    console.log(countries[index]);
+  } else {
+    console.log('All these countries are without land');
+  }
+}
+
+
+for (let index = 0; index < countries.length; index++) {
+  if (/ia$/i.test(countries[index])) {
+    console.log(countries[index]);
+  } else {
+    console.log('These are countries ends without ia');
+  }
+}
+
+let result5 = ''
+for (let index = 0; index < countries.length; index++) {
+  if(countries[index].length > result5.length) {
+    result5 = countries[index]
+  }
+}
+
+
+let result6 = []
+for (let index = 0; index < countries.length; index++) {
+  if(countries[index].length === 5) {
+    result6.push(countries[index])
+  }
+}
+
+
+let result7 = ''
+for (let index = 0; index < webTechs.length; index++) {
+  if(webTechs[index].length ===  result7.length) {
+    result7 = webTechs[index]
+  }
+}
+
+
+const result8 = []
+for (let index = 0; index < webTechs.length; index++) {
+  const cur = webTechs[index]
+  result8.push([cur, cur.length])
+}
+
+
+
+for (const item of mernStack) {
+  console.log(item);
+}
+
+const fruits = ['banana', 'orange', 'mango', 'lemon']
+const result9 = []
+for (let index = fruits.length; index > 0; index--) {
+  result9.push(fruits[index])  
+}
+
+const fullStack = [
+  ['HTML', 'CSS', 'JS', 'React'],
+  ['Node', 'Express', 'MongoDB']
+]
+for (const items of fullStack) {
+  for (const innerItem of items) {
+    console.log(innerItem);
+  }
+}
+
+
